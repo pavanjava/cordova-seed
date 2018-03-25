@@ -1,2 +1,29 @@
 # cordova-seed
 A cordova seed project along with instructions to create, build &amp; run the project
+
+Installation Steps:
+1. Install Android SDK.
+2. Install Cordova using below command.
+	npm install -g cordova
+3. test the version using cordova -v
+	trouble shooting: might be the cordova is not recognized so 
+	please add the npm directory in path
+eg: "C:\Users\PavanKumar\AppData\Roaming\npm"
+
+Creating a Project
+4. cordova create <<CordovaProjectName>> com.spark.sample HelloWorld
+
+Adding Platform (android)
+Note : please refer to cordova documentation for more platform information, here we are adding only android.
+
+5. cordova platform add android
+
+Building and Running
+6. cordova build android
+7. cordova emulate android (to emulate in AVD - Android Vertual Device)
+8. cordova run android (to run in real android device)
+
+Trouble shooting : cordova build need gradle in the path. please add your android SDK to ANDROID_HOME variable.
+---------------------------------------------
+To add specific plugins
+1.cordova plugin add cordova-plugin-contacts
